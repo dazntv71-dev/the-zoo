@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Zoo - Discover Nature</title>
+    <link rel="stylesheet" href="index.html">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .animal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .animal-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        .animal-card img {
+            max-width: 100%;
+            height:200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .text-welcom{
+          font-size: large;
+          width:100%;
+          text-align: center;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .animal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Wildlife Zoo</h1>
+        <p class="text-welcom">Explore the wonders of nature and meet amazing animals!</p>
+    </header>
+    
+    <nav>
+        <a href="#d'accueil">d'accueil</a>
+        <a href="#animals">À propos du zoo</a>
+        <a href="#Animaux">Animaux</a>
+        <a href="#Visites & Activités">Visites & Activités</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <h2>About Our Zoo</h2>
+            <p>Wildlife Zoo is dedicated to conservation, education, and fun. We house over 200 species in naturalistic habitats. Come visit us to learn about wildlife and support our efforts to protect endangered animals.</p>
+            <img src="Zoo_images/zoo.jpg" alt="Zoo Entrance" style="width: 100%; border-radius: 8px; margin-top: 20px;">
+        </section>
+        
+        <section id="animals">
+            <h2>Featured Animals</h2>
+            <div class="animal-grid">
+                <div class="animal-card">
+                    <img src="Zoo_images/Lion.jpg" alt="Lion">
+                    <h3>Lion</h3>
+                    <p>The king of the jungle! Learn about their social behavior and habitats.</p>
+                </div>
+                <div class="animal-card">
+                    <img src="Zoo_images/Elephant.jpg" alt="Elephant">
+                    <h3>Elephant</h3>
+                    <p>Gentle giants with incredible memory. Discover their role in ecosystems.</p>
+                </div>
+                <div class="animal-card">
+                    <img src="Zoo_images/Penguin.jpg" alt="Penguin">
+                    <h3>Penguin</h3>
+                    <p>Adorable swimmers! Explore their Antarctic adventures.</p>
+                </div>
+                <div class="animal-card">
+                    <img src="Zoo_images/Giraffe.jpg" alt="Giraffe">
+                    <h3>Giraffe</h3>
+                    <p>Tallest mammals on Earth. Fun facts about their long necks!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tickets">
+            <h2>Tickets & Hours</h2>
+            <p><strong>Opening Hours:</strong>9 AM - 6 PM daily.</p>
+            <p><strong>Ticket Prices:</strong></p>
+            <ul>
+                <li><mark>Adults</mark>:$25</li>
+                <li><mark>Children</mark>(under 12): $15</li>
+                <li><mark>Seniors</mark>: $20</li>
+            </ul>
+            <p>Book online or visit our ticket booth. Group discounts available!</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><mark>Address</mark>: 123 Zoo Lane, Nature City, NC 12345</p>
+            <p><mark>Phone</mark>: (123) 456-7890</p>
+            <p><mark>Email</mark>: info@wildlifezoo.com</p>
+            <p>Follow us on <strong>social media</strong> for updates!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Wildlife Zoo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
